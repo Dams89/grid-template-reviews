@@ -1,0 +1,147 @@
+body {
+  background-color: #ECF2F8;
+  height: 300vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: barlow semi condensed;
+}
+.container {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+  grid-template-rows: repeat(5,1fr);
+  height: 300vh;
+  background-color:#ECF2F8;
+  gap: 35px;
+}
+.card1 {
+  background-color:#7541C8;
+  border-radius: 5px;
+  position: relative;
+}
+.quotation {
+  background-image: url(images/bg-pattern-quotation.svg);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left : 180px;
+  
+}
+.card2 {
+  background-color:#48556A;
+  border-radius: 5px;
+}
+.card3 {
+  background-color: white;
+  border-radius: 5px;
+}
+.card4 {
+  background-color: white;
+  border-radius: 5px;
+}
+.card5 {
+  background-color: #19212E;
+  border-radius: 5px;
+}
+img {
+  width: 35px;
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+h1 {
+  font-weight: 600;
+  color: white;
+  margin-left: 90px;
+  margin-top: -40px;
+  font-size: 15px;
+}
+h2 {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 90px;
+  font-size: 13px;
+  margin-top: -2px;
+}
+.card3 h1 {
+  color: black;
+}
+.card3 h2 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card3 h3 {
+  color: black;
+}
+.card3 p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card4 h3 {
+  color: black;
+}
+.card4 p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card4 h1 {
+  color: black;
+}
+.card4 h2 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.description {
+  margin: 20px 25px 0 25px;
+}
+h3 {
+  text-align: left;
+  color: white;
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+.card1 img {
+  box-sizing: border-box;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+.card5 img {
+  box-sizing: border-box;
+  border: 3px solid #7541C8;
+}
+@media screen and (min-width : 1300px) {
+  body {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    padding: 0;
+    margin : 50px 100px 50px 100px;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+  }
+  .card1 {
+    grid-column: 1/6;
+    grid-row: 1/7;
+  }
+  .quotation {
+    left : 320px
+  }
+  .card2 {
+    grid-column: 6/9;
+    grid-row: 1/7;
+  }
+  .card3 {
+    grid-column: 9/12;
+    grid-row: 1/12;
+    }
+  .card4 {
+    grid-column: 1/4;
+    grid-row: 7/12;
+  }
+  .card5 {
+    grid-column: 4/9;
+    grid-row: 7/12;
+  }
